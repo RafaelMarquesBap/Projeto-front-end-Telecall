@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./imagens/icone.jpg" type="image/x-icon" />
+    <title>Telecall</title>
+  </head>
+
+  <body>
+    <header id="home">
+      <nav class="cabecalho1">
+        <ul class="nav justify-content-end aling-items-center">
+          <li>
+            <div class="wrapper">
+              <input
+                type="checkbox"
+                name="checkbox"
+                class="switch"
+                id="darkModeToggle"
+              />
+              <label for="darkModeToggle"></label>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial"
+              ><img
+                src="./imagens/whatsapp.png"
+                alt="ìcone do Whatsapp"
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              target="_blank"
+              href="https://www.linkedin.com/company/telecall/"
+              ><img
+                src="./imagens/linkedin.png"
+                alt="ícone do linkedin "
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              href="http://127.0.0.1:5501/INDEX.html#contato"
+              >Contato</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light"
+              href="http://127.0.0.1:5501/INDEX.html#endereco"
+              >Endereço</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./login.html"
+              >Área do Cliente</a
+            >
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light cabecalho2">
+        <a class="" href=""
+          ><img
+            src="./imagens/logo-branca.png"
+            alt="Logo da empresa Telecall"
+            width="100%"
+            height="40"
+        /></a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="INDEX.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="cpaas.html"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+            >
+              CpaaS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="cpaas.html">Oque é CpaaS</a>
+              <a class="dropdown-item" href="2fa.html">2FA</a>
+              <a class="dropdown-item" href="sms.html">SMS Programável</a>
+              <a class="dropdown-item" href="numero_mascara.html"
+                >Número Máscara</a
+              >
+              <a class="dropdown-item" href="google.html"
+                >Google Verified Calls</a
+              >
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteudo">
+      <section class="caixote">
+        <div class="conteudo-principal-escrito">
+          <h1 class="conteudo-principal-escrito-titulo">2FA</h1>
+          <h2 class="conteudo-principal-escrito-subtitulo">
+            Two-Factor Authentication <br />
+            <span class="conteudo-principal-escrito-subtitulo2"
+              >Autenticação de dois fatores</span
+            >
+          </h2>
+
+          <p class="conteudo-principal-escrito-paragrafo">
+            O 2FA é um procedimento de segurança que garante que serão
+            necessários 2 fatores únicos para liberação de uma ação.<br />
+            O primeiro fator é a senha que o usuário e o segundo pode ser
+            autenticado via token, via detecção de impressão digital,
+            reconhecimento facial, código enviado via sms, entre outros.
+          </p>
+          <p class="paragrafo"><strong>O 2FA permite que você: </strong></p>
+          <ul class="lista2">
+            <li class="itens-lista">
+              <strong class="negrito2">Envie</strong> uma senha via SMS, voz ou
+              e-mail para autenticação do usuário.
+            </li>
+            <li>
+              <strong class="negrito2">Adicione</strong> uma camada extra de
+              segurança além da senha pessoal.
+            </li>
+            <li>
+              <strong class="negrito2">Ofereça</strong> maior segurança para
+              usuários.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="caixote">
+          <h2 class="title">
+            Fortaleça a estratégia de segurança de seu negócio.
+          </h2>
+          <p class="paragrafo">
+            Adicionar um número de telefone de recuperação a uma conta
+            individual pode bloquear até:
+          </p>
+          <ul class="lista">
+            <li><span class="negrito">100%</span> dos bots automatizados,</li>
+            <li>
+              <span class="negrito">99%</span> dos ataques de phishing em massa,
+            </li>
+            <li><span class="negrito">66%</span> dos ataques direcionados.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="caixote">
+          <h2 class="title">Como funciona?</h2>
+          <img
+            class="funcionamento-2fa"
+            src="imagens/funcionamento2fa.jpg"
+            alt="Funcionamento do 2FA"
+          />
+        </div>
+      </section>
+
+      <section>
+        <div class="caixote">
+          <h2 class="title">Benefícios</h2>
+          <ul class="lista2">
+            <li class="itens-lista">
+              Ofereça
+              <strong class="negrito2">segurança aprimorada</strong> para seus
+              clientes.
+            </li>
+            <li class="itens-lista">
+              Reduza casos de
+              <strong class="negrito2">fraude e invasões</strong> e evite o
+              acesso a dados por invasores.
+            </li>
+            <li class="itens-lista">
+              Envio de OTP por meio de
+              <strong class="negrito2">vários canais</strong>, incluindo SMS,
+              voz ou e-mail.
+            </li>
+            <li class="itens-lista">
+              <strong class="negrito2">Flexibilidade</strong> de canais garante
+              que o usuário conseguirá completar a tarefa desejada mesmo quando
+              tiver problema com um deles. Exemplo: Enviar OTP por SMS, em caso
+              de falha, enviar OTP por chamada de voz, em caso de outra falha,
+              enviar por e-mail.
+            </li>
+            <li class="itens-lista">
+              API simples e de
+              <strong class="negrito2">rápida implementação</strong>.
+            </li>
+            <li class="itens-lista">
+              <strong class="negrito2">Plataforma intuitiva</strong> que permite
+              visualizar relatórios de uso por dia, mês ou ano e pesquisar
+              usando diversos critérios de filtro.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="quem-usa">
+          <h2 class="title">Quem usa?</h2>
+          <div class="quem-usa-2">
+            <img
+              class="quem-usa-imagem"
+              src="imagens/quem_usa.jpg"
+              alt="Quem usa o 2FA"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="rodape">
+        <a class="" href="#"
+          ><img
+            src="./imagens/logo-branca.png"
+            alt="Logo Empresa Telecall"
+            width="180"
+            height="40"
+            class="pl-3 mt-2"
+        /></a>
+        <div class="nav justify-contente-center">
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#home"
+                >Voltar ao Topo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="http://127.0.0.1:5501/INDEX.html#servi%C3%A7os"
+                >Serviços</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="http://127.0.0.1:5501/INDEX.html#area">Cobertura</a>
+            </li>
+          </ul>
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="area_cliente.html"
+                >Área do Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="login.html"
+                >Login do Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                target="_blank"
+                href="https://www.linkedin.com/jobs/search/?currentJobId=3705655194&f_C=247287&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION&originToLandingJobPostings=3705655194%2C3700622102%2C3622560732%2C3622564292%2C3705680774%2C3650056400%2C3622563163%2C3622560179%2C3650056329"
+                >Trabalhe Conosco</a
+              >
+            </li>
+          </ul>
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="cpaas.html">CpaaS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="2fa.html">2FA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="sms.html">SMS Programável</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="numero_mascara.html"
+                >Número Máscara</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="google.html"
+                >Google Verified Calls</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/dark_mode.js"></script>
+  </body>
+</html>

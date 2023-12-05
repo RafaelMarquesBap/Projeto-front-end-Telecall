@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./imagens/icone.jpg" type="image/x-icon" />
+    <title>Telecall</title>
+  </head>
+
+  <body>
+    <header id="home">
+      <nav class="cabecalho1">
+        <ul class="nav justify-content-end aling-items-center">
+          <li>
+            <div class="wrapper">
+              <input
+                type="checkbox"
+                name="checkbox"
+                class="switch"
+                id="darkModeToggle"
+              />
+              <label for="darkModeToggle"></label>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial"
+              ><img
+                src="./imagens/whatsapp.png"
+                alt="ìcone do Whatsapp"
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              target="_blank"
+              href="https://www.linkedin.com/company/telecall/"
+              ><img
+                src="./imagens/linkedin.png"
+                alt="ícone do linkedin "
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="#contato">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#endereco">Endereço</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./login.html"
+              >Área do Cliente</a
+            >
+            <li class="nav-item"><button class="log-off" onclick="sair()">Encerrar sessão</button></li>
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light cabecalho2">
+        <a class="" href=""
+          ><img
+            src="./imagens/logo-branca.png"
+            alt="Logo da empresa Telecall"
+            width="100%"
+            height="40"
+        /></a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="INDEX.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#serviços">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#area">Área de Cobertura</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="cpaas.html"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+            >
+              CpaaS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="cpaas.html">Oque é CpaaS</a>
+              <a class="dropdown-item" href="2fa.html">2FA</a>
+              <a class="dropdown-item" href="sms.html">SMS Programável</a>
+              <a class="dropdown-item" href="numero_mascara.html"
+                >Número Máscara</a
+              >
+              <a class="dropdown-item" href="google.html"
+                >Google Verified Calls</a
+              >
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="carrosel">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100 img-fluid"
+              src="./imagens/img1.png"
+              alt="Pabx ip virtual"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 img-fluid"
+              src="./imagens/img2.png"
+              alt="Internet Dedicada"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 img-fluid"
+              src="./imagens/img3.png"
+              alt="Celular empresarial"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 img-fluid"
+              src="./imagens/img4.png"
+              alt="Plano celular empresarial"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </section>
+    <div>
+      <span class="p1">Conheça nossos serviços</span>
+    </div>
+    <section id="serviços">
+      <div class="alinhamentoCards">
+        <div class="card">
+          <img
+            src="../Frontend/imagens/telefonia.jpg"
+            alt="Serviço de telefonia"
+            width="100%"
+          />
+          <div class="card__content">
+            <p class="card__title">Telefonia</p>
+            <p class="card__description">
+              Soluções de telefonia inteligentes, inovadoras e integradas.Com
+              opções de planos empresariais, com descontos especiais.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./imagens/internet.jpg"
+            alt="Serviço de internet"
+            width="100%"
+          />
+          <div class="card__content">
+            <p class="card__title">Internet</p>
+            <p class="card__description">
+              Soluções de internet em fibra de altíssima velocidade. Com
+              internet dedicada, banda larga e wi-fi
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./imagens/servidor.jpg"
+            alt="Serviço de infraestrutura"
+            width="100%"
+          />
+          <div class="card__content">
+            <p class="card__title">Infraestutura</p>
+            <p class="card__description">
+              Soluções de conectividade sob medida parar sua empresa. Com acesso
+              dedicado para ligação de dois pontos, formação de rode com
+              protocolo MPLS, fibra apagada e dutos, Locação de espaço em rack
+              no Data Center da Telecall.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <span class="p1">Nossa Cobertura de Serviços</span>
+    </div>
+    <section id="area">
+      <div class="mapa">
+        <img
+          src="./imagens/MapaRJ.png"
+          alt="Mapa de cobertura dos serviços da empresa"
+          width="100%"
+          class="img-fluid"
+        />
+      </div>
+    </section>
+    <section></section>
+    <div>
+      <span class="p1" id="contato">Entre em contato</span>
+    </div>
+    <section>
+      <div class="alinhamentoCards container-fluid">
+        <div class="card2">
+          <span class="p1">Contato</span>
+          <p class="contato-paragrafo">Para qualquer informação, dúvida ou comentário:</p>
+          <p class="contato-paragrafo">(21) 3030-1010</p>
+          <form class="form2">
+            <div class="group2">
+              <input placeholder="" type="text" id="nameEmpresa" required="" />
+              <label for="nameEmpresa">Nome da Empresa</label>
+            </div>
+            <div class="group2">
+              <input
+                placeholder=""
+                type="email"
+                id="email"
+                name="email"
+                required=""
+              />
+              <label for="email">Email Corporativo</label>
+            </div>
+            <div class="group2">
+              <textarea
+                placeholder=""
+                id="comment"
+                name="comment"
+                rows="5"
+                required=""
+              ></textarea>
+              <label for="comment">Mensagem</label>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <ul class="mt-4" type="none">
+          <span class="p1" id="endereco">Escritórios</span>
+          <li>
+            <p><strong>Brasil</strong></p>
+            <p>
+              Centro empresarial Mario Henrique Simonsen Av. das Américas, 3434
+            </p>
+            <p>Bloco 1, Sala 505 Barra da Tijuca | Rio de Janeiro, RJ</p>
+          </li>
+          <li>
+            <p><strong>Estados Unidos</strong></p>
+            <p>848 Brickell Av – Suite 1235 | Miami, Florida, USA – 33131</p>
+          </li>
+          <li>
+            <p><strong>Portugal</strong></p>
+            <p>
+              Avenida da Liberdade nº 245, 4º piso, sala 402 | Lisboa, Portugal
+              1250-143
+            </p>
+          </li>
+          <li>
+            <p><strong>Inglaterra</strong></p>
+            <p>8 Devonshire Squae, Londom EC2M 4YJ</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="rodape">
+        <a class="" href="#"
+          ><img
+            src="./imagens/logo-branca.png"
+            alt="Logo Empresa Telecall"
+            width="180"
+            height="40"
+            class="pl-3 mt-2"
+        /></a>
+        <div class="nav justify-contente-center">
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#home"
+                >Voltar ao Topo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#serviços">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#area">Cobertura</a>
+            </li>
+          </ul>
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="area_cliente.html"
+                >Área do Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="login.html"
+                >Login do Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                target="_blank"
+                href="https://www.linkedin.com/jobs/search/?currentJobId=3705655194&f_C=247287&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION&originToLandingJobPostings=3705655194%2C3700622102%2C3622560732%2C3622564292%2C3705680774%2C3650056400%2C3622563163%2C3622560179%2C3650056329"
+                >Trabalhe Conosco</a
+              >
+            </li>
+          </ul>
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="cpaas.html">CpaaS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="2fa.html">2FA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="sms.html">SMS Programável</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="numero_mascara.html"
+                >Número Máscara</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="google.html"
+                >Google Verified Calls</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/dark_mode.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

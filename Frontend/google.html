@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./imagens/icone.jpg" type="image/x-icon" />
+    <title>Telecall</title>
+  </head>
+
+  <body>
+    <header id="home">
+      <nav class="cabecalho1">
+        <ul class="nav justify-content-end aling-items-center">
+          <li>
+            <div class="wrapper">
+              <input
+                type="checkbox"
+                name="checkbox"
+                class="switch"
+                id="darkModeToggle"
+              />
+              <label for="darkModeToggle"></label>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial"
+              ><img
+                src="./imagens/whatsapp.png"
+                alt="ìcone do Whatsapp"
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              target="_blank"
+              href="https://www.linkedin.com/company/telecall/"
+              ><img
+                src="./imagens/linkedin.png"
+                alt="ícone do linkedin "
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              href="http://127.0.0.1:5501/INDEX.html#contato"
+              >Contato</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light"
+              href="http://127.0.0.1:5501/INDEX.html#endereco"
+              >Endereço</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./login.html"
+              >Área do Cliente</a
+            >
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light cabecalho2">
+        <a class="" href=""
+          ><img
+            src="./imagens/logo-branca.png"
+            alt="Logo da empresa Telecall"
+            width="100%"
+            height="40"
+        /></a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="INDEX.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="cpaas.html"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+            >
+              CpaaS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="cpaas.html">Oque é CpaaS</a>
+              <a class="dropdown-item" href="2fa.html">2FA</a>
+              <a class="dropdown-item" href="sms.html">SMS Programável</a>
+              <a class="dropdown-item" href="numero_mascara.html"
+                >Número Máscara</a
+              >
+              <a class="dropdown-item" href="google.html"
+                >Google Verified Calls</a
+              >
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteudo">
+      <section id="alinhamento-oque-e">
+        <div id="conteudo-oque-e">
+          <h1 class="titulo-oque-e">O que é?</h1>
+          <p class="subtitulo-oque-e">Chamadas verificadas.</p>
+          <p class="alinhamento-paragrafo">
+            Esse novo recurso do <strong id="negrito">Google</strong>, exclusivo
+            para telefones <strong id="negrito">Android</strong>, permite que
+            empresas exibam para o cliente na hora da chamada sua marca,
+            logotipo e até mesmo o motivo da chamada.
+          </p>
+          <p class="alinhamento-paragrafo">
+            A Telecall é
+            <strong id="negrito"
+              >a primeira operadora de telecom no Brasil</strong
+            >
+            a oferecer esse recurso do Google.
+          </p>
+        </div>
+
+        <div id="conteudo-oque-e-imagem">
+          <img
+            id="oque-e-imagem"
+            src="imagens/imagem-tel(google calls).png"
+            alt="Celular recebendo ligação de um número que mostra a logo da empresa, o nome e o motivo da ligação"
+          />
+        </div>
+      </section>
+
+      <section id="alinhamento-o-problema">
+        <div id="conteudo-o-problema">
+          <h2 id="titulo-o-problema">O problema</h2>
+          <h3 id="subtitulo-o-problema">Ligações de spam.</h3>
+          <ul id="lista">
+            <li>
+              O Brasil é o país que mais sofre com ligações de spam no
+              <strong id="negrito">mundo</strong>.
+            </li>
+            <li>
+              Desde 2017, as chamadas telefônicas de spam no Brasil
+              <strong id="negrito">aumentaram 141%</strong>.
+            </li>
+            <li>
+              O brasileiro recebe em média
+              <strong id="negrito">49.9 ligações</strong> de spam por mês.
+            </li>
+          </ul>
+        </div>
+
+        <div id="conteudo-o-problema-imagem">
+          <img
+            id="o-problema-imagem"
+            src="imagens/imagem(google calls).png"
+            alt="Gráfico de ligações indesejadas no Brasil"
+          />
+        </div>
+      </section>
+
+      <section id="alinhamento-compatibilidade">
+        <div id="conteudo-compatibilidade">
+          <h2 id="titulo-compatibilidade">Compatibilidade</h2>
+          <ul id="lista-compatibilidade">
+            <li>
+              Exclusivo para sistema operacional
+              <strong id="negrito">Android</strong> através do aplicativo
+              <strong id="negrito">Telefone</strong>.
+            </li>
+            <li>
+              Pré-instalado em telefones mais recentes ou pode ser baixado do
+              <strong id="negrito">Google Play Store</strong> para a maioria dos
+              dispositivos com Android 9.0.
+            </li>
+            <li>
+              Hoje no Brasil existem quase
+              <strong id="negrito"
+                >239 milhões de celulares smartphone ativos</strong
+              >, sendo que o sistema <strong id="negrito">Android</strong> detém
+              uma participação de mais de <strong id="negrito">86%</strong> do
+              mercado de sistema operacional móvel no país.
+            </li>
+          </ul>
+        </div>
+
+        <div id="conteudo-compatibilidade-imagem">
+          <img
+            id="compatibilidade-imagem"
+            src="imagens/compatibilidade(google-calls).png"
+            alt="Celular com o Google Play Store aberto no aplicativo Telefone"
+          />
+        </div>
+      </section>
+
+      <section id="alinhamento-como-funciona">
+        <div id="conteudo-como-funciona">
+          <h2 id="titulo-como-funciona">Como funciona?</h2>
+          <img
+            id="como-funciona-imagem"
+            src="imagens/como funciona(google calls).png"
+            alt="Funcionamento do Google Verified Calls"
+          />
+        </div>
+      </section>
+
+      <section id="alinhamento-beneficios">
+        <div id="conteudo-beneficios">
+          <h2 id="titulo-beneficios">Benefícios</h2>
+          <ul id="lista-beneficios">
+            <li>
+              <strong class="negrito-beneficios">Estabeleça Confiança</strong>
+            </li>
+            <li class="item-lista-beneficios">
+              Clientes são mais propensos a atender chamadas de organizações com
+              os quais estão familiariazados e com as quais já tem relação.
+            </li>
+            <li>
+              <strong class="negrito-beneficios">Agilize a Conexão</strong>
+            </li>
+            <li class="item-lista-beneficios">
+              Quando o motivo da chamada é claro, a chance de o cliente atender
+              é muito maior e a conexão com ele é mais rápida e eficiente.
+            </li>
+            <li>
+              <strong class="negrito-beneficios"
+                >Melhore a Experiência do Cliente</strong
+              >
+            </li>
+            <li class="item-lista-beneficios">
+              O nome da marca, logotipo e a visualização do motivo da chamada
+              oferecem uma experiência melhor e muito mais amigável para o
+              cliente.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="alinhamento-usos">
+        <div id="conteudo-uso">
+          <h2 id="titulo-usos">Usos</h2>
+          <ul id="lista-usos">
+            <li>
+              Aviso de problemas de <strong id="negrito">fraude</strong> de
+              cartão de crédito.
+            </li>
+            <li>
+              Aviso de atrasos e cancelamentos de
+              <strong id="negrito">voos</strong>.
+            </li>
+            <li>
+              <strong id="negrito">Agendamentos</strong> de serviços, entregas,
+              reparos e instalações.
+            </li>
+            <li>
+              <strong id="negrito">Avisos</strong> sobre agendamentos, exames e
+              resultados.
+            </li>
+            <li>
+              Oferecer uma melhor experiência de
+              <strong id="negrito">vendas</strong> e
+              <strong id="negrito">promoções</strong>.
+            </li>
+          </ul>
+        </div>
+
+        <div id="conteudo-usos-imagem">
+          <img
+            id="imagem-usos-verified-calls"
+            src="imagens/usos(googlecalls).png"
+            alt="Usos do Google Verified Calls"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="rodape">
+        <a class="" href="#"
+          ><img
+            src="./imagens/logo-branca.png"
+            alt="Logo Empresa Telecall"
+            width="180"
+            height="40"
+            class="pl-3 mt-2"
+        /></a>
+        <div class="nav justify-contente-center">
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#home"
+                >Voltar ao Topo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="http://127.0.0.1:5501/INDEX.html#servi%C3%A7os"
+                >Serviços</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="http://127.0.0.1:5501/INDEX.html#area"
+                >Cobertura</a
+              >
+            </li>
+          </ul>
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="area_cliente.html"
+                >Área do Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="login.html"
+                >Login do Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                target="_blank"
+                href="https://www.linkedin.com/jobs/search/?currentJobId=3705655194&f_C=247287&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION&originToLandingJobPostings=3705655194%2C3700622102%2C3622560732%2C3622564292%2C3705680774%2C3650056400%2C3622563163%2C3622560179%2C3650056329"
+                >Trabalhe Conosco</a
+              >
+            </li>
+          </ul>
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="cpaas.html">CpaaS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="2fa.html">2FA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="sms.html">SMS Programável</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="numero_mascara.html"
+                >Número Máscara</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="google.html"
+                >Google Verified Calls</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/dark_mode.js"></script>
+  </body>
+</html>

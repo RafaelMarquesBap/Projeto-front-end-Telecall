@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/area_cliente.css" />
+    <link rel="shortcut icon" href="./imagens/icone.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Telecall</title>
+  </head>
+
+  <body>
+    <header id="home">
+      <nav class="cabecalho1">
+        <ul class="nav justify-content-end aling-items-center">
+          <li>
+            <div class="wrapper">
+              <input
+                type="checkbox"
+                name="checkbox"
+                class="switch"
+                id="darkModeToggle"
+              />
+              <label for="darkModeToggle"></label>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial"
+              ><img
+                src="./imagens/whatsapp.png"
+                alt="ìcone do Whatsapp"
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              target="_blank"
+              href="https://www.linkedin.com/company/telecall/"
+              ><img
+                src="./imagens/linkedin.png"
+                alt="ícone do linkedin "
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-light"
+              href="http://127.0.0.1:5501/INDEX.html#contato"
+              >Contato</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light"
+              href="http://127.0.0.1:5501/INDEX.html#endereco"
+              >Endereço</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./login.html"
+              >Área do Cliente</a
+            >
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light cabecalho2">
+        <a class="" href=""
+          ><img
+            src="./imagens/logo-branca.png"
+            alt="Logo da empresa Telecall"
+            width="100%"
+            height="40"
+        /></a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="INDEX.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Área de Cobertura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Sobre Nós</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="cpaas.html"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+            >
+              CpaaS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="cpaas.html">Oque é CpaaS</a>
+              <a class="dropdown-item" href="2fa.html">2FA</a>
+              <a class="dropdown-item" href="sms.html">SMS Programável</a>
+              <a class="dropdown-item" href="numero_mascara.html"
+                >Número Máscara</a
+              >
+              <a class="dropdown-item" href="google.html"
+                >Google Verified Calls</a
+              >
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <p class="p1">Área do Cliente</p>
+    </div>
+    <section class="form_do_fael">
+      <div class="main-form-container">
+        <div class="form-container">
+          <section class="form-header">
+            <h1>Cadastre-se</h1>
+            <h2>Crie sua conta de graça com os dados abaixo</h2>
+          </section>
+          <div id="msgError"></div>
+          <div id="msgSuccess"></div>
+          <form class="form" id="form">
+            <div class="form-content">
+              <label for="username">Nome do usuário *</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Digite o nome do usuário..."
+              />
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="birthday">Data de Nascimento *</label>
+              <input
+                type="date"
+                name="username"
+                id="birthday"
+                placeholder="Informe sua data de nascimento..."
+              />
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="gender">Sexo *</label>
+              <select name="gender" id="gender">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+              </select>
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="momname">Nome Materno *</label>
+              <input
+                type="text"
+                name="momname"
+                id="momname"
+                placeholder="Digite o nome materno..."
+              />
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="cpf">CPF *</label>
+              <input
+                type="text"
+                name="cpf"
+                id="cpf"
+                placeholder="Digite o seu CPF..."
+              />
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="celnumber">Telefone Celular *</label>
+              <input
+                type="text"
+                name="celnumber"
+                id="celnumber"
+                placeholder="Digite o número do seu telefone celular..."
+              />
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="telnumber">Telefone Fixo *</label>
+              <input
+                type="text"
+                name="telnumber"
+                id="telnumber"
+                placeholder="Digite o número do seu telefone fixo..."
+              />
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="address">Endereço Completo *</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Digite o seu endereço completo..."
+              />
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="username">Login *</label>
+              <input
+                type="text"
+                name="login"
+                id="login"
+                placeholder="Digite o seu login..."
+              />
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="password">Senha *</label>
+              <i
+                id="seePassword"
+                class="fa fa-eye fa-lg"
+                aria-hidden="true"
+              ></i>
+              <i
+                id="hidePassword"
+                class="fa fa-eye-slash fa-lg"
+                aria-hidden="true"
+              ></i>
+
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Digite a sua senha..."
+                required
+              />
+
+              <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-content">
+              <label for="passwordtwo">Confirmar senha *</label>
+              <i
+                id="seePasswordTwo"
+                class="fa fa-eye fa-lg"
+                aria-hidden="true"
+              ></i>
+              <i
+                id="hidePasswordTwo"
+                class="fa fa-eye-slash fa-lg"
+                aria-hidden="true"
+              ></i>
+
+              <input
+                type="password"
+                name="passwordtwo"
+                id="passwordtwo"
+                placeholder="Digite a sua senha novamente..."
+                required
+              />
+
+              <small>Mensagem de erro</small>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="rodape">
+        <a class="" href="#"
+          ><img
+            src="./imagens/logo-branca.png"
+            alt="Logo Empresa Telecall"
+            width="180"
+            height="40"
+            class="pl-3 mt-2"
+        /></a>
+        <div class="nav justify-contente-center">
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#home"
+                >Voltar ao Topo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="http://127.0.0.1:5501/INDEX.html#servi%C3%A7os"
+                >Serviços</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="http://127.0.0.1:5501/INDEX.html#area"
+                >Cobertura</a
+              >
+            </li>
+          </ul>
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="area_cliente.html"
+                >Área do Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="login.html"
+                >Login do Cliente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                target="_blank"
+                href="https://www.linkedin.com/jobs/search/?currentJobId=3705655194&f_C=247287&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION&originToLandingJobPostings=3705655194%2C3700622102%2C3622560732%2C3622564292%2C3705680774%2C3650056400%2C3622563163%2C3622560179%2C3650056329"
+                >Trabalhe Conosco</a
+              >
+            </li>
+          </ul>
+          <ul class="nav flex-column pl-3">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="cpaas.html">CpaaS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="2fa.html">2FA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="sms.html">SMS Programável</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="numero_mascara.html"
+                >Número Máscara</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="google.html"
+                >Google Verified Calls</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/area_cliente.js"></script>
+    <script src="./js/dark_mode.js"></script>
+  </body>
+</html>

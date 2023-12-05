@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contato{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    background-color: #272727;
+    width: 100%;
+    height: auto;
+}
+
+header div p{
+    padding-left: 50px;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.icone{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    background-color: #3f99c5;
+    width: 100%;
+    height: auto;
+}
+
+.titulos{
+    margin: 25px;
+}
+
+nav li{
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+ nav a:hover{
+    color: black;
+ }
+span h1{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.image{
+    width: 100%;
+    border-radius: 40%;
+    padding: 15px;
+    
+}
+.sobre_div{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3f99c5;
+}
+
+.texto_sobre{
+    display: flex;
+    text-align: justify;
+    width:40%;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    align-items: center;
+    font-size: large;
+    
+}
+
+.conhecimento_img{
+    padding: 15px;
+    width: 270px;
+}
+.alinhamento_conhecimento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_conhecimento{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.1em;
+    color: #3f99c5;
+    text-align: center;
+}
+
+.conhecimento{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 20px;
+}
+
+.tabela{
+    background-color: #3f99c5;
+    display: flex;
+    justify-content: center;
+    
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    border: solid black;
+    margin: 35px;
+    
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+
+}
+th{
+    background-color: #272727;
+}
+
+.rodape{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #272727;
+}
+
+.autor{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color:aliceblue;
+    font-weight: bold;
+    background-color: #272727;
+}
+
+@media (max-width: 768px){
+    .conhecimento{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre_div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        padding-left: 40px;
+        width: 80%;
+    }
+    .contato{
+        width: 100%;
+        margin: 0;
+    }
+    table{
+        width: 100%;
+    }
+    header div p{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 0;
+        width: 100%;
+        margin: 0px;
+        font-size: small;
+    }
+    .icone{
+        margin: 0;
+    }
+    .texto_sobre{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+    nav li{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 0;
+        margin: 5px;
+    }
+    .rodape{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+    }
+}
